@@ -1,4 +1,4 @@
-# ML GoLang Exaample.
+# ML GoLang Example.
 
 This code example shows reading a BASKET with n Items.  In this case 3 Items.
 
