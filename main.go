@@ -54,7 +54,7 @@ func main() {
 	// Changing MAXPROCS is a means of tunning the app
 
 	// Part 1...  Print out original Basket
-	// the Tags are not modified
+	// the Tags are not Modified
 	fmt.Println("=====AAA  Unmodified Basket  ======")
 	for i := 0; i < ilen; i++ {
 		fmt.Printf("===  %d - %v \n", i, B[0].Basket.Items[i].Tag)
@@ -71,14 +71,14 @@ func main() {
 	for i := 0; i < ilen; i++ {
 		//fmt.Printf("===  %d - %v \n", i, B[0].Basket.Items[i].Tag)
 		wg.Add(1)
-		go modified(i, &B[0].Basket.Items[i].Tag)
+		go Modified(i, &B[0].Basket.Items[i].Tag)
 	}
 	wg.Wait()
 	fmt.Println("=====BBB  Ending Modification  ======")
 
 	// Third Part of Example...
 	// After all of the comutation is finsihed on this BASKET
-	// The Tags should be modified.  Or the Items should all be modified.
+	// The Tags should be Modified.  Or the Items should all be Modified.
 	fmt.Println("=====CCC  Modified Basket  ======")
 	for i := 0; i < ilen; i++ {
 		fmt.Printf("===  %d - %v \n", i, B[0].Basket.Items[i].Tag)
@@ -87,7 +87,7 @@ func main() {
 
 }
 
-func modified(tt int, bb *string) {
+func Modified(tt int, bb *string) {
 	fmt.Println(tt)
 	// fmt.Println(bb[0].Basket.Items[tt].Tag)
 	fmt.Println(*bb)
