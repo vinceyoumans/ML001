@@ -13,7 +13,7 @@ I could have set it to 4 and it should work fine.  1 for main process. 3 for eac
 This is my thoughts on what you were hinting at for your solution.
 
 
-Modification : I added unit testing to the app.
+***Modification : I added unit testing to the app.***
 
 
 TODO:
@@ -24,7 +24,7 @@ If BB wants to see some real fireworks...
 1. add a redis container where the baskets will be hosted.
 2. Create alternative approach where a single, Long running Go Application spawns new Go Routines.  This was my original Idea, and differ from spawning individual GoLang containers.
 3. Create a Leader board application that is listening to Channels.
-4. Add Testing
+4. Add unit Testing - done
 
 
 
